@@ -65,3 +65,26 @@ var fs = require('fs');
 // var ws = fs.createWriteStream('test/wirtein.txt', 'utf-8');
 
 // rs.pipe(ws)
+
+fs.stat('test/test.txt', function(err, stat){
+    if(err){
+        console.log(err);
+    }else{
+        //是否文件
+        console.log('isFile:' + stat.isFile());
+
+        // 是否是目录
+        console.log('isDirectory' + stat.isDirectory());
+
+        if(stat.isFile()) {
+            // 文件大小
+            console.log('size:' + stat.size);
+
+            //创建的时间
+            console.log('bith time:' + stat.birthtime);
+
+            // 修改日期
+            console.log('modify time:' + stat.mtime);
+        }
+    }
+})

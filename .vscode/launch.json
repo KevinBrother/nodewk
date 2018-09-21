@@ -4,12 +4,22 @@
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+
         {
             "type": "node",
             "request": "launch",
-            "name": "启动程序",
+            "name": "httpTest",
+            "program": "${workspaceFolder}/test\\http.js"
+        }, {
+            "type": "node",
+            "request": "launch",
+            "name": "mainTest",
             "program": "${workspaceFolder}/test\\main.js"
+        }, {
+            "type": "node",
+            "request": "launch",
+            "name": "fileServe",
+            "program": "${workspaceFolder}/test\\file_server.js"
         }
     ]
 }
