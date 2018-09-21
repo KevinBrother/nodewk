@@ -20,6 +20,11 @@
             "request": "launch",
             "name": "fileServe",
             "program": "${workspaceFolder}/test\\file_server.js"
+        }, {
+            "type": "node",
+            "request": "launch",
+            "name": "crypto",
+            "program": "${workspaceFolder}/test\\crypto.js"
         }
     ]
 }

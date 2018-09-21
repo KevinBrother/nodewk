@@ -18,7 +18,7 @@ var server = http.createServer(function(request, respone){
 
     var filePath = path.join(root, urlParse.pathname);
     console.log('filePath', filePath);
-
+    filePath = 'G:\\文档\\hotel\\订单号.png';
     fs.stat(filePath, function(err, stat){
         if(!err && stat.isFile()){
             console.log('200' + request.url);
